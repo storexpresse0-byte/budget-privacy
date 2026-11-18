@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Politique de confidentialité — Budget by Smart Studio Life. Données 100 % locales." />
+  <title>Politique de confidentialité — Budget | Smart Studio Life</title>
+  <style>
+    :root {
+      --teal: #0F766E;
+      --teal-soft: #CCFBF1;
+      --ink: #0F172A;
+      --muted: #64748B;
+      --line: #E2E8F0;
+      --bg: #F8FAFC;
+      --card: #FFFFFF;
+      --radius: 16px;
+      --max: 720px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background:
+        radial-gradient(ellipse 80% 50% at 100% 0%, rgba(15, 118, 110, 0.12), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 0% 100%, rgba(45, 212, 191, 0.1), transparent 50%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #2DD4BF, #0F766E);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .logo svg { width: 22px; height: 22px; }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-text span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px;
+      gap: 2px;
+    }
+
+    .lang-switch button {
+      appearance: none;
+      border: none;
+      background: transparent;
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
+    .lang-switch button[aria-pressed="true"] {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.45rem, 4vw, 1.85rem);
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .hero .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .pill::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 8px 0;
+    }
+
+    section {
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child { border-bottom: none; }
+
+    section h2 {
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+
+    section p + p { margin-top: 10px; }
+
+    section ul {
+      margin: 10px 0 0 1.15rem;
+      color: var(--ink);
+    }
+
+    section li { margin: 6px 0; }
+
+    a {
+      color: var(--teal);
+      font-weight: 600;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .hidden { display: none !important; }
+
+    @media (max-width: 480px) {
+      .wrap { padding: 20px 14px 48px; }
+      .hero, section { padding-left: 18px; padding-right: 18px; }
+      section { padding-top: 18px; padding-bottom: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 19V5" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M4 19h16" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <rect x="7" y="11" width="3.2" height="8" rx="1" fill="white"/>
+            <rect x="12" y="7" width="3.2" height="12" rx="1" fill="white" opacity="0.85"/>
+            <rect x="17" y="9" width="3.2" height="10" rx="1" fill="white" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <strong>Budget</strong>
+          <span>Smart Studio Life</span>
+        </div>
+      </div>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" id="btn-fr" aria-pressed="true">FR</button>
+        <button type="button" id="btn-en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <!-- ========== FRANÇAIS ========== -->
+    <div id="content-fr">
+      <div class="hero">
+        <h1>Politique de confidentialité</h1>
+        <p class="meta">Application mobile <strong>Budget</strong> · Éditeur <strong>Smart Studio Life</strong><br />
+          Dernière mise à jour : 17 novembre 2026 · Version 1.0.0</p>
+        <div class="pill">100 % local · Hors ligne · Sans compte</div>
+      </div>
+
+      <article>
+        <section>
+          <h2>1. Introduction</h2>
+          <p>
+            Budget, édité par Smart Studio Life, respecte votre vie privée. Cette politique explique
+            quelles données sont traitées (ou non), où elles sont stockées, et comment nous contacter.
+          </p>
+          <p>
+            L’application fonctionne <strong>100 % hors ligne</strong> pour le suivi de votre budget :
+            aucune connexion serveur n’est requise pour saisir, consulter ou gérer vos finances personnelles.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Stockage 100 % local des données financières</h2>
+          <p>
+            <strong>Toutes les données financières que vous saisissez</strong> (transactions, montants,
+            catégories, notes, préférences de langue et de devise, sauvegardes JSON générées sur l’appareil)
+            sont stockées <strong>à 100 % localement sur votre appareil</strong>, via
+            <strong>SQLite</strong> (mobile) et/ou <strong>AsyncStorage</strong> (préférences / web).
+          </p>
+          <p>
+            Ces données <strong>ne sont jamais transmises à un serveur externe</strong> contrôlé par
+            Smart Studio Life. Nous ne collectons, n’hébergeons et n’analysons aucun historique financier
+            sur le cloud.
+          </p>
+          <ul>
+            <li>Aucun compte utilisateur n’est requis</li>
+            <li>Aucune synchronisation cloud obligatoire</li>
+            <li>Aucune information bancaire, mot de passe ou identifiant financier n’est demandé</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Pas de vente ni de partage à des tiers</h2>
+          <p>
+            <strong>Aucune donnée personnelle n’est vendue, louée ou partagée à des tiers</strong>
+            à des fins publicitaires, analytiques ou commerciales.
+          </p>
+          <p>
+            Smart Studio Life ne revend pas vos informations et ne constitue pas de profil marketing
+            à partir de votre usage de Budget.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Achats intégrés et abonnement Pro</h2>
+          <p>
+            Budget propose un abonnement optionnel <strong>Budget Pro</strong> (historique illimité,
+            export PDF, recherche avancée, mises à jour).
+          </p>
+          <p>
+            La gestion des <strong>achats intégrés et abonnements Pro</strong> passe
+            <strong>uniquement par Google Play Billing</strong> (sur Android) et, le cas échéant,
+            par <strong>RevenueCat</strong>, de manière sécurisée. Smart Studio Life ne reçoit pas
+            et ne stocke pas les numéros de carte bancaire : le paiement est traité par les
+            infrastructures de Google Play (et d’Apple App Store le cas échéant).
+          </p>
+          <p>
+            Les informations d’état d’abonnement nécessaires au déblocage des fonctions Pro peuvent
+            être vérifiées via ces plateformes, conformément à leurs propres politiques de confidentialité.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Permissions et fonctionnalités liées à l’appareil</h2>
+          <p>
+            Selon la plateforme, Budget peut utiliser des API locales pour générer et partager un
+            rapport PDF, exporter/importer une sauvegarde JSON, ou afficher la langue du système.
+            Ces actions restent sous votre contrôle et n’entraînent pas d’envoi automatique de vos
+            finances vers nos serveurs (nous n’en exploitons pas).
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Conservation et suppression</h2>
+          <p>
+            Vos données restent sur l’appareil tant que l’application est installée, ou jusqu’à ce
+            que vous les effaciez (suppression de transactions, import écrasant, ou désinstallation
+            de l’app). La désinstallation de Budget entraîne en principe la suppression des données
+            locales associées, selon le comportement du système d’exploitation.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Enfants</h2>
+          <p>
+            Budget n’est pas destinée aux enfants de moins de 13 ans (ou l’âge minimum applicable
+            dans votre pays) et ne collecte pas sciemment de données auprès d’eux.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Modifications</h2>
+          <p>
+            Nous pouvons mettre à jour cette politique pour refléter des évolutions de l’application
+            ou de la réglementation. La date de « Dernière mise à jour » en tête de page sera révisée
+            en conséquence. L’usage continu de l’app après publication vaut prise de connaissance
+            de la version en vigueur.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Contact</h2>
+          <p>
+            Pour toute question relative à la confidentialité ou à Budget :
+          </p>
+          <p>
+            <a href="mailto:contact.smartstudiolife@gmail.com">contact.smartstudiolife@gmail.com</a><br />
+            Smart Studio Life
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <!-- ========== ENGLISH ========== -->
+    <div id="content-en" class="hidden">
+      <div class="hero">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Mobile app <strong>Budget</strong> · Publisher <strong>Smart Studio Life</strong><br />
+          Last updated: November 17, 2026 · Version 1.0.0</p>
+        <div class="pill">100% local · Offline · No account</div>
+      </div>
+
+      <article>
+        <section>
+          <h2>1. Introduction</h2>
+          <p>
+            Budget, published by Smart Studio Life, respects your privacy. This policy explains what
+            data is processed (or not), where it is stored, and how to contact us.
+          </p>
+          <p>
+            The app works <strong>100% offline</strong> for budget tracking: no server connection is
+            required to enter, view, or manage your personal finances.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. 100% local storage of financial data</h2>
+          <p>
+            <strong>All financial data you enter</strong> (transactions, amounts, categories, notes,
+            language and currency preferences, and JSON backups created on the device) is stored
+            <strong>100% locally on your device</strong> using <strong>SQLite</strong> (mobile)
+            and/or <strong>AsyncStorage</strong> (preferences / web).
+          </p>
+          <p>
+            This data is <strong>never transmitted to an external server</strong> controlled by
+            Smart Studio Life. We do not collect, host, or analyze any financial history in the cloud.
+          </p>
+          <ul>
+            <li>No user account is required</li>
+            <li>No mandatory cloud sync</li>
+            <li>No banking details, passwords, or financial credentials are requested</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. No selling or sharing with third parties</h2>
+          <p>
+            <strong>No personal data is sold, rented, or shared with third parties</strong>
+            for advertising, analytics, or commercial purposes.
+          </p>
+          <p>
+            Smart Studio Life does not sell your information and does not build marketing profiles
+            from your use of Budget.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. In-app purchases and Pro subscription</h2>
+          <p>
+            Budget offers an optional <strong>Budget Pro</strong> subscription (unlimited history,
+            PDF export, advanced search, updates).
+          </p>
+          <p>
+            <strong>In-app purchases and Pro subscriptions</strong> are handled
+            <strong>only through Google Play Billing</strong> (on Android) and, where applicable,
+            <strong>RevenueCat</strong>, in a secure manner. Smart Studio Life does not receive or
+            store credit card numbers: payment is processed by Google Play’s infrastructure
+            (and the Apple App Store where applicable).
+          </p>
+          <p>
+            Subscription status needed to unlock Pro features may be verified through these
+            platforms, subject to their own privacy policies.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Device permissions and features</h2>
+          <p>
+            Depending on the platform, Budget may use local APIs to generate and share a PDF report,
+            export/import a JSON backup, or read the system language. These actions remain under your
+            control and do not automatically send your finances to our servers (we do not operate any).
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Retention and deletion</h2>
+          <p>
+            Your data stays on the device while the app is installed, or until you delete it
+            (removing transactions, overwriting via import, or uninstalling the app). Uninstalling
+            Budget typically removes associated local data, according to the operating system.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Children</h2>
+          <p>
+            Budget is not directed at children under 13 (or the applicable minimum age in your
+            country) and we do not knowingly collect data from them.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Changes</h2>
+          <p>
+            We may update this policy to reflect app or legal changes. The “Last updated” date at
+            the top of this page will be revised accordingly. Continued use of the app after
+            publication constitutes acknowledgment of the current version.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Contact</h2>
+          <p>
+            For any privacy questions about Budget:
+          </p>
+          <p>
+            <a href="mailto:contact.smartstudiolife@gmail.com">contact.smartstudiolife@gmail.com</a><br />
+            Smart Studio Life
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      © 2026 Smart Studio Life · Budget
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const fr = document.getElementById('content-fr');
+      const en = document.getElementById('content-en');
+      const btnFr = document.getElementById('btn-fr');
+      const btnEn = document.getElementById('btn-en');
+
+      function setLang(lang) {
+        const isFr = lang === 'fr';
+        fr.classList.toggle('hidden', !isFr);
+        en.classList.toggle('hidden', isFr);
+        btnFr.setAttribute('aria-pressed', String(isFr));
+        btnEn.setAttribute('aria-pressed', String(!isFr));
+        document.documentElement.lang = lang;
+        document.title = isFr
+          ? 'Politique de confidentialité — Budget | Smart Studio Life'
+          : 'Privacy Policy — Budget | Smart Studio Life';
+        try { localStorage.setItem('budget-privacy-lang', lang); } catch (_) {}
+      }
+
+      btnFr.addEventListener('click', () => setLang('fr'));
+      btnEn.addEventListener('click', () => setLang('en'));
+
+      let initial = 'fr';
+      try {
+        const saved = localStorage.getItem('budget-privacy-lang');
+        if (saved === 'fr' || saved === 'en') initial = saved;
+        else if (navigator.language && navigator.language.toLowerCase().startsWith('en')) initial = 'en';
+      } catch (_) {}
+      setLang(initial);
+    })();
+  </script>
+</body>
+</html>
